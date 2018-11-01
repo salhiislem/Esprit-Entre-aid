@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="887.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workshopPI.ui.Planning1FXMLController">
+  <children>
+    <TableView id="tab_plan" fx:id="tab_plan1" layoutX="93.0" layoutY="85.0" prefHeight="280.0" prefWidth="844.0" style="-fx-background-color: gray;">
+      <columns>
+        <TableColumn fx:id="nom1" prefWidth="120.0" text="nom" />
+        <TableColumn fx:id="sujet1" prefWidth="120.0" text="sujet" />
+        <TableColumn fx:id="enseignant1" prefWidth="120.0" text="enseignant" />
+        <TableColumn fx:id="maximum1" prefWidth="120.0" text="maximum" />
+        <TableColumn fx:id="salle1" prefWidth="120.0" text="salle" />
+        <TableColumn fx:id="date1" prefWidth="120.0" text="date" />
+        <TableColumn fx:id="heure1" prefWidth="120.0" text="heure" />
+      </columns>
+    </TableView>
+    <Label layoutX="299.0" layoutY="26.0" prefHeight="47.0" prefWidth="390.0" text="Sessions de revision" textFill="#0029ff">
+      <font>
+        <Font name="Algerian" size="35.0" />
+      </font>
+    </Label>
+    <Button id="btn_inscrit" fx:id="btn_inscrit1" layoutX="787.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#inscrivez1" prefHeight="46.0" prefWidth="150.0" style="-fx-background-radius: 50;" text="Participer" />
+    <TableView id="tab_inscription" fx:id="tab_inscription1" layoutX="232.0" layoutY="472.0" prefHeight="200.0" prefWidth="471.0" style="-fx-background-color: gray;">
+      <columns>
+        <TableColumn fx:id="nomE1" onEditCommit="#changeNomCellEvent" prefWidth="224.0" text="nom_etudiant" />
+        <TableColumn fx:id="prenomE1" onEditCommit="#changePrenomCellEvent" prefWidth="246.39993286132812" text="prenom_etudiant" />
+      </columns>
+    </TableView>
+    <Button id="btn_inscrire" fx:id="btn_inscrire1" layoutX="650.0" layoutY="715.0" mnemonicParsing="false" onMouseClicked="#inscrire1" prefHeight="51.0" prefWidth="105.0" style="-fx-background-radius: 50;" text="s'inscrire" />
+    <TextField id="tf_nomE" fx:id="tf_nomE1" layoutX="232.0" layoutY="722.0" prefHeight="38.0" prefWidth="133.0" promptText="votre nom" />
+    <TextField id="tf_prenomE" fx:id="tf_prenomE1" layoutX="448.0" layoutY="722.0" prefHeight="38.0" prefWidth="133.0" promptText="votre prenom" />
+    <Button id="btn_desinscrire" fx:id="btn_desinscrire1" layoutX="650.0" layoutY="801.0" mnemonicParsing="false" onMouseClicked="#desinscrire1" prefHeight="51.0" prefWidth="105.0" style="-fx-background-radius: 50;" text="desinscrire" />
+      <Button fx:id="btn_rtr" layoutX="93.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#retour" prefHeight="38.0" prefWidth="62.0" style="-fx-background-radius: 50;" text="retour" />
+      <Button fx:id="btn_quitter" layoutX="868.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#quitter" prefHeight="38.0" prefWidth="71.0" style="-fx-background-radius: 50;" text="Quitter" textFill="#e81818" />
+  </children>
+</AnchorPane>
