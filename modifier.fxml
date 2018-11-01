@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mo" prefHeight="470.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.ModifierController">
+   <children>
+      <Text layoutX="184.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="modifier">
+         <font>
+            <Font size="40.0" />
+         </font></Text>
+      <TableView fx:id="mod" layoutX="32.0" layoutY="90.0" prefHeight="305.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="dep" prefWidth="75.0" text="depart" />
+          <TableColumn fx:id="ar" prefWidth="75.0" text="arrive" />
+            <TableColumn fx:id="tem" prefWidth="75.0" text="temps" />
+            <TableColumn fx:id="nb" prefWidth="75.0" text="nbr" />
+            <TableColumn fx:id="num" prefWidth="96.0" text="numero" />
+            <TableColumn fx:id="ty" prefWidth="98.0" text="type" />
+            <TableColumn fx:id="p" prefWidth="105.0" text="prix" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
